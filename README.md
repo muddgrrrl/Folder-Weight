@@ -22,3 +22,11 @@ python3 folder_weight.py . --json
 ```
 
 Requires Python 3.8+. Totals use apparent file sizes, include hidden files, and count individual paths to hard-linked files. Nested symlinks are skipped. Unreadable paths produce partial results and an exit status of 1. The tool only reads filesystem metadata. [MIT](LICENSE)
+
+## Development
+
+Run the same dependency-free regression tests used in GitHub Actions.
+
+```sh
+python3 -m unittest discover -s tests -v
+```
